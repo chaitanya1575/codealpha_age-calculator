@@ -24,7 +24,7 @@ function calculateAge() {
     }
 
     // Validate year
-    if (isNaN(year)) {
+    if (isNaN(year) || year > 2024) {
         yearError.textContent = "Invalid year";
         return;
     } else {
